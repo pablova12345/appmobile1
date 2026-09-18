@@ -1,0 +1,10 @@
+{
+  "name": "submodulo-resoluciones-y-clasificacion-ia",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Orquestacion de un solo comando para levantar backend/resoluciones (FastAPI), backend/server (Node, Estudiar con IA) y frontend/resoluciones-web (Vite).",
+  "scripts": {
+    "setup": "node scripts/setup.js",
+    "dev": "node scripts/setup.js && node scripts/dev.js"
+  }
+}

@@ -1,0 +1,71 @@
+@import 'tailwindcss';
+
+/* Tokens de tema alineados con proyecto-erp/Frontend/src/index.css
+   (paleta institucional GAMC/IDEC). */
+@theme {
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+  --color-graphite-950: #0a0d12;
+  --color-haze-300: #a8b8cc;
+  --color-haze-400: #8fa3ba;
+
+  /* Primaria (púrpura GAMC) */
+  --color-brand-900: #26154a;
+  --color-brand-800: #341a67;
+  --color-brand-600: #584291;
+
+  /* Acento (cian institucional) */
+  --color-accent-50: #edf8fd;
+  --color-accent-200: #c4e7f4;
+  --color-accent-300: #a8daed;
+  --color-accent-400: #47b4d8;
+  --color-accent-500: #009ed0;
+  --color-accent-600: #007ea6;
+
+  /* Estados */
+  --color-state-success: #72ae17;
+  --color-state-success-soft: #9ac040;
+  --color-state-warning: #efbe00;
+  --color-state-amber: #eb8f00;
+  --color-state-orange: #df491f;
+  --color-state-orange-deep: #e67012;
+  --color-state-lime: #bdcc00;
+  --color-state-danger: #d60035;
+  --color-state-magenta: #a60054;
+}
+
+@utility animate-card-in {
+  animation: card-in 420ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes card-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+:root {
+  --toastify-color-success: var(--color-state-success);
+  --toastify-color-warning: var(--color-state-warning);
+  --toastify-color-error: var(--color-state-danger);
+  --toastify-color-info: var(--color-accent-500);
+  --toastify-font-family: var(--font-sans);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: #1e293b;
+  background-color: var(--color-accent-400);
+}

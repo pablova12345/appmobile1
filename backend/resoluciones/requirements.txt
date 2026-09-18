@@ -1,0 +1,15 @@
+# Mismas versiones que proyecto-erp/backend/requirements.txt donde se solapa,
+# para que el equipo del ERP lo integre sin conflictos de dependencias.
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+pydantic==2.13.4
+pydantic-settings==2.15.0
+python-jose[cryptography]==3.3.0
+requests==2.32.3
+python-dotenv==1.0.1
+sqlalchemy>=2.0.30
+python-multipart>=0.0.9
+
+# Solo si se usa PostgreSQL (DATABASE_URL=postgresql://...). En dev con SQLite
+# no hace falta instalarlo.
+psycopg2-binary>=2.9.10

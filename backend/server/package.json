@@ -1,0 +1,18 @@
+{
+  "name": "apptramitessiscat-ai-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Backend proxy que guarda la API key de Anthropic y expone endpoints de clasificacion/extraccion de documentos para AppTramitesSisCat.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "xlsx": "^0.18.5"
+  }
+}

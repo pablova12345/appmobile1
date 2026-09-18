@@ -1,0 +1,63 @@
+# Un solo .gitignore para todo el repo (frontend/ + backend/).
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# --- Node (mobile, resoluciones-web, server) --------------------------------
+node_modules/
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+dist/
+dist-ssr/
+web-build/
+*.tsbuildinfo
+
+# --- Expo (frontend/mobile) --------------------------------------------------
+.expo/
+expo-env.d.ts
+.metro-health-check*
+android/
+ios/
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.log
+
+# --- Python (backend/resoluciones) -------------------------------------------
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+*.db
+*.sqlite3
+.pytest_cache/
+.mypy_cache/
+
+# --- Variables de entorno (nunca subir las reales, solo *.example) ----------
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# --- Android / Gradle -----------------------------------------------------
+local.properties
+.gradle/
+build/
+
+# --- OS / editor ---------------------------------------------------------
+.DS_Store
+*.pem
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.bak*

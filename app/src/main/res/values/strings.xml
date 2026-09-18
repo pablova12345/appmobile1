@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">DigiD</string>
+    <string name="app_full_name">Digitalización de Trámites SisCat</string>
+    <string name="login_title">Iniciar Sesión</string>
+    <string name="username">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="login_button">Ingresar</string>
+    <string name="biometric_prompt_title">Identifíquese para ingresar</string>
+    <string name="biometric_prompt_subtitle">Use su huella digital o reconocimiento facial</string>
+    <string name="biometric_prompt_negative">Cancelar</string>
+</resources>
